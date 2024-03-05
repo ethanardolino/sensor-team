@@ -26,20 +26,20 @@ $ vd                        # 'deactivate' venv
 ---
 First, figure out which type of terminal shell you are using. If you are unsure, then run the command 
 ```linux
-echo $SHELL
+$ echo $SHELL
 ```
 The output will be ```/bin/_shell_type_```. For instance, a *bash* shell will have the following output
 ```linux
-/bin/bash
+$ /bin/bash
 ```
 
 Next, open the *shell startup file* with a text editor. The *shell startup file* name will vary depending on the type of shell you are using. The following example is for a *bash* shell
 ```linux
-vim ~/.bashrc
+$ vim ~/.bashrc
 ```
 
 Lastly, add the following aliases to the file (location does not matter) :
 ```linux
-alias va="source venv/bin/activate"
-alias vd="deactivate"
+    alias va="source venv/bin/activate"
+    alias vd="deactivate"
 ```
