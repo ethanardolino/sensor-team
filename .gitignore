@@ -1,0 +1,7 @@
+# don't include venv w/ repo (a TON of files)
+venv/
+
+# only include .csv or .txt files from data folder 
+data/*
+!data/*.csv
+!data/*.txt
